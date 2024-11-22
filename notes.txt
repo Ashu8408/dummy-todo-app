@@ -1,0 +1,19 @@
+ def api
+    @response = {
+      status: 200,
+      message: "Hello HealthGraph"
+    }
+    render json: @response
+
+=begin
+other methods to pass response:-
+    render status: @response
+    render html: @response
+    render body: @response
+    render html: @response
+    render xml: @response
+    render json: @response
+    render plain: @response
+    render text: @response
+=end
+  end
